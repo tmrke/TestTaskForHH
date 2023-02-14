@@ -82,7 +82,7 @@
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintBottom_toTopOf="@+id/attack_button_1"
         app:layout_constraintEnd_toStartOf="@+id/monster2"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.74"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
