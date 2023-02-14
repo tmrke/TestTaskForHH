@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/src/androidTest/java/ru/ageev/hhgame/
+/app/src/test/java/ru/ageev/hhgame/
