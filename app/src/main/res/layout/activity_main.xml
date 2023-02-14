@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <ImageView
+        android:id="@+id/monster3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:textAlignment="center"
+        android:background="#FF5722"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/attack_button_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/monster2" />
+
+    <TextView
+        android:id="@+id/monster_health_text_3"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="000"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/monster3"
+        app:layout_constraintEnd_toEndOf="@+id/monster3"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/monster3"
+        app:layout_constraintTop_toTopOf="@+id/monster3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/attack_button_3"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="304dp"
+        android:backgroundTint="#ED0000"
+        android:text="Attack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/monster2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#FF5722"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/attack_button_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/attack_button_2"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="192dp"
+        android:backgroundTint="#ED0000"
+        android:text="Attack"
+        app:layout_constraintBottom_toTopOf="@+id/gamer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/monster1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FF5722"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/attack_button_1"
+        app:layout_constraintEnd_toStartOf="@+id/monster2"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/attack_button_1"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="296dp"
+        android:backgroundTint="#ED0000"
+        android:text="Attack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/monster_health_text_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="000"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/monster1"
+        app:layout_constraintEnd_toEndOf="@+id/monster1"
+        app:layout_constraintStart_toStartOf="@+id/monster1"
+        app:layout_constraintTop_toTopOf="@+id/monster1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/monster_health_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="000"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/monster2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/monster2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/gamer"
+        android:layout_width="159dp"
+        android:layout_height="143dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/treats_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treat_button"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <Button
+        android:id="@+id/treat_button"
+        android:layout_width="102dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="add"
+        android:text="Treat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamer"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/gamer_health_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:textAlignment="center"
+        android:textColor="#008000"
+        app:layout_constraintBottom_toBottomOf="@+id/gamer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gamer"
+        app:layout_constraintVertical_bias="0.572" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
