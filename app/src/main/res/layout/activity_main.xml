@@ -7,174 +7,202 @@
     tools:context=".main.MainActivity">
 
     <ImageView
-        android:id="@+id/monster3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp"
-        android:textAlignment="center"
-        android:background="#FF5722"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/attack_button_3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/monster2" />
+        android:id="@+id/monster_heart_3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/monster3"
+        app:layout_constraintEnd_toEndOf="@+id/monster3"
+        app:layout_constraintStart_toStartOf="@+id/monster3"
+        app:srcCompat="@drawable/heart" />
 
     <TextView
         android:id="@+id/monster_health_text_3"
-        android:layout_width="64dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
         android:text="000"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/monster3"
-        app:layout_constraintEnd_toEndOf="@+id/monster3"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/monster3"
-        app:layout_constraintTop_toTopOf="@+id/monster3"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/attack_button_3"
-        android:layout_width="107dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="304dp"
-        android:backgroundTint="#ED0000"
-        android:text="Attack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/monster_heart_3"
+        app:layout_constraintEnd_toEndOf="@+id/monster_heart_3"
+        app:layout_constraintStart_toStartOf="@+id/monster_heart_3"
+        app:layout_constraintTop_toTopOf="@+id/monster_heart_3" />
 
     <ImageView
-        android:id="@+id/monster2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="#FF5722"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/attack_button_2"
+        android:id="@+id/monster_heart_2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/monster2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/attack_button_2"
-        android:layout_width="107dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="192dp"
-        android:backgroundTint="#ED0000"
-        android:text="Attack"
-        app:layout_constraintBottom_toTopOf="@+id/gamer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/monster1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp"
-        android:background="#FF5722"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintBottom_toTopOf="@+id/attack_button_1"
-        app:layout_constraintEnd_toStartOf="@+id/monster2"
-        app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/attack_button_1"
-        android:layout_width="108dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="296dp"
-        android:backgroundTint="#ED0000"
-        android:text="Attack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/monster_health_text_1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="000"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/monster1"
-        app:layout_constraintEnd_toEndOf="@+id/monster1"
-        app:layout_constraintStart_toStartOf="@+id/monster1"
-        app:layout_constraintTop_toTopOf="@+id/monster1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927"
+        app:srcCompat="@drawable/heart" />
 
     <TextView
         android:id="@+id/monster_health_text_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="000"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/monster2"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/monster_heart_2"
+        app:layout_constraintEnd_toEndOf="@+id/monster_heart_2"
+        app:layout_constraintStart_toStartOf="@+id/monster_heart_2"
+        app:layout_constraintTop_toTopOf="@+id/monster_heart_2" />
+
+    <Button
+        android:id="@+id/attack_button_3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ED0000"
+        android:text="Attack"
+        app:layout_constraintEnd_toEndOf="@+id/monster3"
+        app:layout_constraintStart_toStartOf="@+id/monster3"
+        app:layout_constraintTop_toBottomOf="@+id/monster3" />
+
+    <Button
+        android:id="@+id/attack_button_2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#ED0000"
+        android:text="Attack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/monster2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/monster2" />
 
-    <ImageView
-        android:id="@+id/gamer"
-        android:layout_width="159dp"
-        android:layout_height="143dp"
-        android:layout_marginBottom="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <TextView
-        android:id="@+id/treats_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/treat_button"
-        app:layout_constraintVertical_bias="0.205" />
+    <Button
+        android:id="@+id/attack_button_1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ED0000"
+        android:text="Attack"
+        app:layout_constraintEnd_toEndOf="@+id/monster1"
+        app:layout_constraintStart_toStartOf="@+id/monster1"
+        app:layout_constraintTop_toBottomOf="@+id/monster1" />
 
     <Button
         android:id="@+id/treat_button"
-        android:layout_width="102dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="129dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
         android:backgroundTint="#4CAF50"
         android:backgroundTintMode="add"
         android:text="Treat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gamer"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintTop_toBottomOf="@+id/hero"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/treats_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/treat_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/treat_button"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <ImageView
+        android:id="@+id/hero"
+        android:layout_width="159dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attack_button_2"
+        app:layout_constraintVertical_bias="0.285"
+        app:srcCompat="@drawable/hero" />
+
+    <ImageView
+        android:id="@+id/heroHeart"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hero"
+        app:layout_constraintEnd_toEndOf="@+id/hero"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/hero"
+        app:layout_constraintTop_toTopOf="@+id/hero"
+        app:layout_constraintVertical_bias="0.721"
+        app:srcCompat="@drawable/heart" />
 
     <TextView
         android:id="@+id/gamer_health_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="36dp"
+        android:layout_height="22dp"
         android:text="000"
         android:textAlignment="center"
-        android:textColor="#008000"
-        app:layout_constraintBottom_toBottomOf="@+id/gamer"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/heroHeart"
+        app:layout_constraintEnd_toEndOf="@+id/heroHeart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/heroHeart"
+        app:layout_constraintTop_toTopOf="@+id/heroHeart" />
+
+    <ImageView
+        android:id="@+id/monster1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/monster" />
+
+    <ImageView
+        android:id="@+id/monster2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gamer"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/monster" />
+
+    <ImageView
+        android:id="@+id/monster3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/monster" />
+
+    <ImageView
+        android:id="@+id/monster_heart_1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/monster1"
+        app:layout_constraintEnd_toEndOf="@+id/monster1"
+        app:layout_constraintStart_toStartOf="@+id/monster1"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/monster_health_text_1"
+        android:layout_width="24dp"
+        android:layout_height="17dp"
+        android:text="000"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/monster1"
+        app:layout_constraintEnd_toEndOf="@+id/monster_heart_1"
+        app:layout_constraintStart_toStartOf="@+id/monster_heart_1"
+        app:layout_constraintTop_toTopOf="@+id/monster_heart_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
